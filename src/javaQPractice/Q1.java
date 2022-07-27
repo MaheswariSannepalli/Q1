@@ -1,6 +1,6 @@
 package javaQPractice;
 
-class musicsystem1{
+class musicsystem{
 	 static int sound ;
 	// setting sound
 	static String setSound(int volume)
@@ -23,7 +23,7 @@ interface Vehicle{
 	void setSound(int volume) ;
 	void highSoundAlert() ;
 }
-class bus1 implements Vehicle
+class bus implements Vehicle
 {
 	public void setSound(int volume)
 	{
@@ -38,7 +38,7 @@ class bus1 implements Vehicle
 		System.out.println("beep");
 	}
 }
-class car1 implements Vehicle
+class car implements Vehicle
 {
 	public void setSound(int volume)
 	{
@@ -56,7 +56,7 @@ public class Q1 {
 
 	public static void main(String[] args)
 	{
-		Vehicle v = new car1();
+		Vehicle v = new car();
 		v.setSound(101);
 		v.setSound(90);
 	}
